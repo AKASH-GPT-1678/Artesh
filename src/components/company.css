@@ -1,0 +1,15 @@
+#company-container{
+    padding: 30px 24px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 30px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+
+}
