@@ -7,6 +7,8 @@ import { Share2 } from 'lucide-react';
 import Jobs from "./Jobs";
 import Peoples from './people.tsx';
 import CompanyView from './companyview';
+import Location from './location.tsx';
+
 const company = [
     {
         Location: "Mumbai, India",
@@ -15,18 +17,18 @@ const company = [
     }
 ];
 const peopleData = [
-  {
-    imageUrl: "https://res.cloudinary.com/dffepahvl/image/upload/v1755282442/jsvagwzn2qidwa25dmky.webp",
-    name: "Yash Rajesh",
-    position: "Founder and CEO",
-    companyName: "YRF"
-  },
-  {
-    imageUrl: "https://res.cloudinary.com/dffepahvl/image/upload/v1755282442/jsvagwzn2qidwa25dmky.webp",
-    name: "Priya Kapoor",
-    position: "Creative Director",
-    companyName: "YRF"
-  }
+    {
+        imageUrl: "https://res.cloudinary.com/dffepahvl/image/upload/v1755282442/jsvagwzn2qidwa25dmky.webp",
+        name: "Yash Rajesh",
+        position: "Founder and CEO",
+        companyName: "YRF"
+    },
+    {
+        imageUrl: "https://res.cloudinary.com/dffepahvl/image/upload/v1755282442/jsvagwzn2qidwa25dmky.webp",
+        name: "Priya Kapoor",
+        position: "Creative Director",
+        companyName: "YRF"
+    }
 ];
 const companyData = [
     {
@@ -107,7 +109,7 @@ const ProductionView = () => {
                 </div>
             </div>
             <div id={"about-container"} className={"p-4"}>
-                <div>
+                <div className='flex flex-row gap-5'>
                     <div className={"about-content max-w-2xl "}>
                         <p className={"font-semibold"}>About YRF</p>
 
@@ -117,10 +119,21 @@ const ProductionView = () => {
                             Yash Raj Films (YRF) is one of India’s leading film production and distribution companies, founded by legendary filmmaker Yash Chopra in 1970. Headquartered in Mumbai, YRF has produced some of Bollywood’s most iconic and commercially successful movies. The studio is known for its grand storytelling, strong emotions, and memorable music. Under the leadership of Aditya Chopra, YRF has expanded into talent management, digital content, and music production. It also owns YRF Studios, one of the most advanced film production facilities in India. The company continues to shape the modern Indian cinema landscape through innovation and creative excellence.
                         </p>
                         <span className={"text-[16px] cursor-pointer text-blue-600"} onClick={() => setTruncate(!truncate)}>{truncate ? "Read More" : "Read less"}</span>
+
+                        <div>
+                            <Jobs />
+                            <Location/>
+
+                        </div>
+                      
                     </div>
-                    <Jobs />
-                    <Peoples people={peopleData}/>
-                    <CompanyView companies={companyData}/>
+                    <div>
+                        <Peoples people={peopleData} />
+                        <CompanyView companies={companyData} />
+
+                    </div>
+
+
                 </div>
 
 

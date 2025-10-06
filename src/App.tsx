@@ -1,3 +1,4 @@
+import FixFooter from "./components/footer";
 import ProductionView from "./components/production";
 
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <ProductionView />
+      <FixFooter/>
     </>
   )
 }

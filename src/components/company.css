@@ -1,11 +1,11 @@
 #company-container{
     padding: 30px 24px;
     background-color: white;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-content: center;
     gap: 30px;
+    margin-top: 20px;
 }
 
 img{
