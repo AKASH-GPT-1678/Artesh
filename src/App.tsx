@@ -1,17 +1,17 @@
-import FixFooter from "./components/footer";
-import ProductionView from "./components/production";
+import ArtistDashBoard from "./components/artist/artistdashboard";
 
 
 
 
 function App() {
-  const count = 0;
+ 
 
 
   return (
     <>
-      <ProductionView />
-      <FixFooter/>
+      {/* <ProductionView /> */}
+      <ArtistDashBoard/>
+      {/* <FixFooter/> */}
     </>
   )
 }
